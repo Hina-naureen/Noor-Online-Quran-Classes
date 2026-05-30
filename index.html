@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Noor Techno Kids Enrollment</title>
+<style>
+  * { box-sizing: border-box; margin:0; padding:0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+  body { background-color: #eef2f7; display: flex; justify-content: center; align-items: center; min-height: 100vh; padding: 20px; }
+
+  .container {
+    width: 100%;
+    max-width: 700px;
+    background: #fff;
+    border-radius: 15px;
+    padding: 40px 35px;
+    box-shadow: 0 12px 25px rgba(0,0,0,0.12);
+  }
+
+  h2 {
+    text-align: center;
+    font-size: 28px;
+    background: linear-gradient(90deg,#0b3d91,#1e64ff);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 5px;
+  }
+
+  p.subtitle {
+    text-align: center;
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 30px;
+  }
+
+  form label {
+    display: block;
+    margin: 12px 0 6px;
+    font-weight: 600;
+    color: #0B3D91;
+  }
+  form input, form select {
+    width: 100%;
+    padding: 12px 15px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 15px;
+    transition: 0.3s;
+  }
+  form input:focus, form select:focus {
+    border-color: #1e64ff;
+    box-shadow: 0 0 8px rgba(30,100,255,0.2);
+    outline: none;
+  }
+
+  button {
+    margin-top: 25px;
+    width: 100%;
+    padding: 14px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    background: linear-gradient(90deg,#0b3d91,#1e64ff);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  button:hover {
+    background: linear-gradient(90deg,#1e64ff,#0b3d91);
+    transform: translateY(-2px);
+  }
+
+  @media (max-width: 600px) {
+    .container { padding: 25px 20px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <h2>Noor Techno Kids Enrollment</h2>
+  <p class="subtitle">June - July 2026 | Boys & Girls (Up to 13 Years)</p>
+
+  <form action="https://script.google.com/macros/s/AKfycbz1hKwvlMLYn0NzaWtldAqv0Ok9KtnmZ27IdT3rjTIqhSNCg-H0xHmfcSVO1IUFG77eGg/exec" method="POST" target="_blank">
+
+    <label for="name">Student Full Name:</label>
+    <input type="text" id="name" name="student_name" placeholder="Enter full name" required>
+
+    <label for="dob">Date of Birth:</label>
+    <input type="date" id="dob" name="dob" required>
+
+    <label for="age">Age:</label>
+    <input type="number" id="age" name="age" min="5" max="13" placeholder="Enter age" required>
+
+    <label for="gender">Gender:</label>
+    <select id="gender" name="gender" required>
+      <option value="">Select Gender</option>
+      <option value="male">Boy</option>
+      <option value="female">Girl</option>
+    </select>
+
+    <label for="school">School Name:</label>
+    <input type="text" id="school" name="school_name" placeholder="Enter school name" required>
+
+    <label for="grade">Grade/Class:</label>
+    <input type="text" id="grade" name="grade" placeholder="Enter current grade/class" required>
+
+    <label for="parent_name">Parent/Guardian Name:</label>
+    <input type="text" id="parent_name" name="parent_name" placeholder="Enter parent/guardian name" required>
+
+    <label for="contact">Parent Contact Number:</label>
+    <input type="tel" id="contact" name="contact_number" placeholder="03152467890" required pattern="[0-9]{11}">
+
+    <label for="email">Parent Email (Optional):</label>
+    <input type="email" id="email" name="email" placeholder="Enter email">
+
+    <label for="course">Select Course:</label>
+    <select id="course" name="course" required>
+      <option value="">Select Course</option>
+      <option value="canva">Canva Designing</option>
+      <option value="excel">Excel Skills</option>
+      <option value="video">Video Editing</option>
+      <option value="prompting">Prompting (AI Skills)</option>
+      <option value="full">Full Program</option>
+    </select>
+
+    <label for="certificate">Certificate Delivery:</label>
+    <select id="certificate" name="certificate" required>
+      <option value="">Select Option</option>
+      <option value="digital">Digital Certificate (PDF)</option>
+      <option value="physical">Physical Certificate (Post/Hand Delivery)</option>
+    </select>
+
+    <button type="submit">Enroll Now</button>
+  </form>
+</div>
+
+</body>
+</html>
