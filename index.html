@@ -11,53 +11,81 @@
 <style>
 
 *{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+margin:0;
+padding:0;
+box-sizing:border-box;
 }
+
 
 body{
 
-    font-family:
-    "Noto Nastaliq Urdu",
-    "Segoe UI",
-    Arial,
-    sans-serif;
+font-family:
+"Noto Nastaliq Urdu",
+"Segoe UI",
+Arial,sans-serif;
 
-    background:
-    linear-gradient(135deg,#041421,#073044);
+background:
+radial-gradient(circle at top,#06445c,#020b16 60%);
 
-    color:white;
+color:white;
 
-    line-height:2;
+line-height:2;
 
 }
+
 
 
 .container{
 
-    padding:50px 20px;
+padding:50px 20px;
 
 }
 
 
+
 .card{
 
-    max-width:950px;
+max-width:1000px;
 
-    margin:auto;
+margin:auto;
 
-    background:
-    rgba(255,255,255,0.08);
+background:
 
-    backdrop-filter:blur(15px);
+rgba(255,255,255,0.08);
 
-    border-radius:30px;
+backdrop-filter:blur(18px);
 
-    padding:45px;
+border-radius:35px;
 
-    box-shadow:
-    0 20px 60px rgba(0,0,0,0.4);
+padding:45px;
+
+box-shadow:
+
+0 25px 80px rgba(0,0,0,.5);
+
+animation:fadeIn 1s ease;
+
+}
+
+
+
+@keyframes fadeIn{
+
+from{
+
+opacity:0;
+
+transform:translateY(30px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
 
 }
 
@@ -65,53 +93,82 @@ body{
 
 /* Header */
 
+
 .header{
 
-    text-align:center;
+text-align:center;
 
-    margin-bottom:35px;
+margin-bottom:45px;
 
 }
+
 
 
 .header h1{
 
-    color:#00e5ff;
+font-size:42px;
 
-    font-size:40px;
+color:#00e5ff;
+
+text-shadow:
+
+0 0 20px #00e5ff;
 
 }
+
 
 
 .header h2{
 
-    font-size:27px;
+font-size:28px;
 
-    margin-top:15px;
+margin-top:15px;
 
 }
+
 
 
 .header p{
 
-    font-size:18px;
+font-size:18px;
+
+color:#ddd;
 
 }
 
 
 
-/* Content Boxes */
+
+/* Boxes */
+
 
 .box{
 
-    background:
-    rgba(255,255,255,0.10);
+background:
 
-    padding:25px;
+rgba(255,255,255,.10);
 
-    border-radius:20px;
+padding:30px;
 
-    margin-bottom:25px;
+border-radius:25px;
+
+margin-bottom:30px;
+
+border:1px solid rgba(255,255,255,.15);
+
+transition:.4s;
+
+}
+
+
+
+.box:hover{
+
+transform:translateY(-8px);
+
+box-shadow:
+
+0 15px 35px rgba(0,229,255,.25);
 
 }
 
@@ -119,11 +176,11 @@ body{
 
 .box h3{
 
-    color:#00e5ff;
+color:#00e5ff;
 
-    font-size:24px;
+font-size:26px;
 
-    margin-bottom:15px;
+margin-bottom:18px;
 
 }
 
@@ -131,7 +188,7 @@ body{
 
 .box ul{
 
-    padding-right:25px;
+padding-right:25px;
 
 }
 
@@ -139,153 +196,126 @@ body{
 
 .box li{
 
-    margin-bottom:8px;
+margin-bottom:10px;
 
 }
 
 
 
-/* AI */
+/* AI Section */
+
 
 .ai{
 
-    border:1px solid #9b6cff;
+background:
 
-    background:
-    rgba(155,108,255,0.12);
+linear-gradient(
 
-}
+135deg,
 
+rgba(155,108,255,.25),
 
+rgba(0,229,255,.15)
 
-/* Form */
+);
 
+border:
 
-.form-box{
-
-    margin-top:40px;
-
-}
-
-
-.form-box h2{
-
-    text-align:center;
-
-    color:#00e5ff;
-
-    margin-bottom:25px;
+1px solid #9b6cff;
 
 }
 
 
 
-input,
-select,
-textarea{
+.ai h3{
 
-
-    width:100%;
-
-    padding:15px;
-
-    margin-bottom:18px;
-
-    border-radius:12px;
-
-    border:none;
-
-    font-size:16px;
-
-    direction:rtl;
-
-}
-
-
-textarea{
-
-    height:120px;
+color:#d9b8ff;
 
 }
 
 
 
-button{
+.ai strong{
 
-    width:100%;
-
-    padding:16px;
-
-    border:none;
-
-    border-radius:30px;
-
-    background:#00e5ff;
-
-    color:#002333;
-
-    font-size:20px;
-
-    font-weight:bold;
-
-    cursor:pointer;
-
-    transition:.3s;
+color:#00e5ff;
 
 }
 
 
 
-button:hover{
 
-    background:white;
+/* Course Cards */
 
-    transform:scale(1.03);
+
+.course-item{
+
+background:
+
+rgba(0,229,255,.08);
+
+padding:15px;
+
+border-radius:15px;
+
+margin-bottom:12px;
+
+transition:.3s;
+
+}
+
+
+
+.course-item:hover{
+
+background:
+
+rgba(0,229,255,.2);
+
+transform:translateX(-8px);
 
 }
 
 
 
-.footer{
+/* Fee */
 
-    text-align:center;
 
-    margin-top:35px;
+.fee{
 
-    color:#ddd;
+text-align:center;
+
+border:
+
+2px solid #ffd700;
+
+background:
+
+rgba(255,215,0,.08);
+
+}
+
+
+
+.fee-price{
+
+font-size:38px;
+
+font-weight:bold;
+
+color:#ffd700;
+
+text-shadow:
+
+0 0 15px #ffd700;
 
 }
 
 
 
-@media(max-width:600px){
-
-.card{
-
-    padding:25px;
-
-}
-
-
-.header h1{
-
-    font-size:28px;
-
-}
-
-
-.header h2{
-
-    font-size:20px;
-
-}
-
-}
 
 </style>
 
 </head>
-
 
 
 <body>
@@ -318,7 +348,6 @@ Quran Tajweed, Nazra, Duas & Salah Learning Program
 
 
 
-
 <div class="box">
 
 <h3>
@@ -327,14 +356,17 @@ Quran Tajweed, Nazra, Duas & Salah Learning Program
 
 
 <p>
+
 قرآنِ پاک کو صحیح تجوید، درست مخارج، قواعد، دعاؤں اور نماز کے مکمل طریقے کے ساتھ سیکھنے کے لیے ہمارے کورسز میں داخلہ حاصل کریں۔
+
 </p>
 
 
 <p>
-Learn Quran with proper Tajweed, Makharij, Qawaid, Duas and Salah guidance.
-</p>
 
+Learn Quran with proper Tajweed, Makharij, Qawaid, Duas and Salah guidance.
+
+</p>
 
 </div>
 
@@ -342,11 +374,7 @@ Learn Quran with proper Tajweed, Makharij, Qawaid, Duas and Salah guidance.
 
 
 
-
-<!-- AI Second Section -->
-
 <div class="box ai">
-
 
 <h3>
 🤖 AI Assisted Quran Learning
@@ -354,46 +382,42 @@ Learn Quran with proper Tajweed, Makharij, Qawaid, Duas and Salah guidance.
 
 
 <p>
-ہم جدید Artificial Intelligence (AI) technology کے ذریعے قرآن سیکھنے کے عمل کو مزید آسان، دلچسپ اور مؤثر بنائیں گے۔
-</p>
 
+ہم جدید Artificial Intelligence (AI) technology کو استعمال کرتے ہوئے قرآن سیکھنے کے عمل کو مزید آسان، دلچسپ اور مؤثر بناتے ہیں۔
 
-<p>
-AI کی مدد سے طلبہ کی practice، غلطیوں کی نشاندہی، تلفظ (Pronunciation) کی بہتری اور learning progress کو بہتر طریقے سے track کیا جائے گا۔
 </p>
 
 
 <ul>
 
 <li>
-AI Assisted Practice کے ذریعے قرآن پڑھنے کی مشق بہتر کی جائے گی۔
+AI کی مدد سے pronunciation اور مخارج کی practice بہتر کی جائے گی۔
 </li>
-
 
 <li>
-مخارج اور تلفظ کی بہتری کے لیے جدید tools استعمال کیے جائیں گے۔
+طلبہ کی غلطیوں کی نشاندہی اور improvement میں مدد دی جائے گی۔
 </li>
-
 
 <li>
-طلبہ کی learning speed اور progress کے مطابق رہنمائی فراہم کی جائے گی۔
+Learning progress کو بہتر طریقے سے track کیا جائے گا۔
 </li>
-
 
 <li>
-AI صرف learning support کے طور پر استعمال ہوگا، مکمل رہنمائی استادہ کی نگرانی میں ہوگی۔
+AI صرف learning support ہوگا، مکمل رہنمائی استادہ کی نگرانی میں ہوگی۔
 </li>
+
 
 </ul>
 
 
 <p>
-AI tools will support students with practice, pronunciation improvement, error identification and progress tracking under teacher guidance.
+
+AI tools support students with practice, pronunciation improvement and progress tracking.
+
 </p>
 
 
 </div>
-
 
 
 
@@ -408,36 +432,19 @@ AI tools will support students with practice, pronunciation improvement, error i
 
 <ul>
 
-<li>
-خواتین (Women)
-</li>
+<li>خواتین (Women)</li>
 
+<li>بچے (Boys)</li>
 
-<li>
-بچے (Boys)
-</li>
+<li>بچیاں (Girls)</li>
 
+<li>ہر عمر کی خواتین جو قرآن صحیح تجوید کے ساتھ پڑھنا چاہتی ہیں۔</li>
 
-<li>
-بچیاں (Girls)
-</li>
-
-
-<li>
-ہر عمر کی خواتین جو قرآنِ پاک صحیح تجوید کے ساتھ پڑھنا چاہتی ہیں۔
-</li>
-
-
-<li>
-Women of all ages who want to learn Quran with proper Tajweed.
-</li>
-
+<li>Women of all ages who want to learn Quran with proper Tajweed.</li>
 
 </ul>
 
-
 </div>
-
 
 
 
@@ -448,78 +455,93 @@ Women of all ages who want to learn Quran with proper Tajweed.
 <h3>
 📚 ہمارے کورسز
 </h3>
+
+
+<div class="course-item">
+📖 قرآن ناظرہ کورس
+<br>
+Quran Reading Course
 </div>
 
-    <div class="box">
+
+<div class="course-item">
+✨ مکمل تجوید کورس
+<br>
+Complete Tajweed Course
+</div>
+
+
+<div class="course-item">
+🔤 مخارج کی اصلاح
+<br>
+Makharij Correction
+</div>
+
+
+<div class="course-item">
+🤲 دعائیں یاد کرنے کا کورس
+<br>
+Duas Learning Course
+</div>
+
+
+<div class="course-item">
+🕌 نماز سیکھنے کا کورس
+<br>
+Salah Learning Course
+</div>
+
+
+</div>
+
+
+<!-- Course Fee Section -->
+
+<div class="box fee">
 
 <h3>
 💳 Course Fee | کورس فیس
 </h3>
 
-<p style="font-size:30px;font-weight:bold;color:#00e5ff;text-align:center;">
+
+<div class="fee-price">
 
 Rs. 2,600 / Month
 
-</p>
+</div>
+
 
 <ul>
 
 <li>
-💠 ماہانہ فیس: <strong>Rs. 2,600</strong>
+💠 ماہانہ فیس: Rs. 2,600
 </li>
 
-<li>
-💠 یہ فیس تمام کلاسز، ہفتہ وار ٹیسٹ، مخارج کی اصلاح، تجوید، دعاؤں اور نماز کی تعلیم پر مشتمل ہے۔
-</li>
 
 <li>
-💠 AI Assisted Learning بھی اسی فیس میں شامل ہے۔
+💠 فیس میں قرآن ناظرہ، تجوید، مخارج کی اصلاح، دعائیں اور نماز کی تعلیم شامل ہے۔
 </li>
 
+
 <li>
-💠 کلاسز استادہ کی براہِ راست نگرانی میں ہوں گی۔
+💠 AI Assisted Learning اور Practice Support بھی شامل ہے۔
 </li>
+
+
+<li>
+💠 ہر طالب علم کی انفرادی رہنمائی کی جائے گی۔
+</li>
+
 
 </ul>
 
-<p style="text-align:center;color:#ffd700;font-weight:bold;font-size:18px;">
+
+<p>
 
 ✨ ایک ہی فیس میں مکمل قرآن لرننگ پروگرام ✨
 
 </p>
 
-</div>
-
-<ul>
-
-
-<li>
-قرآن ناظرہ کورس (Quran Reading Course)
-</li>
-
-
-<li>
-مکمل تجوید کورس (Complete Tajweed Course)
-</li>
-
-
-<li>
-مخارج کی اصلاح (Makharij Correction)
-</li>
-
-
-<li>
-دعائیں یاد کرنے کا کورس (Duas Course)
-</li>
-
-
-<li>
-نماز کا مکمل طریقہ (Salah Learning)
-</li>
-
-
-</ul>
-
 
 </div>
 
@@ -527,6 +549,8 @@ Rs. 2,600 / Month
 
 
 
+
+<!-- Teaching Method -->
 
 <div class="box">
 
@@ -538,29 +562,28 @@ Rs. 2,600 / Month
 
 <ul>
 
-
 <li>
-ہر سبق کے ساتھ سبق سنا جائے گا۔
+📖 ہر سبق کے ساتھ سبق سنا جائے گا۔
 </li>
 
 
 <li>
-مخارج (Makharij) کے باقاعدہ ٹیسٹ لیے جائیں گے۔
+🔤 مخارج (Makharij) کے باقاعدہ ٹیسٹ لیے جائیں گے۔
 </li>
 
 
 <li>
-تجوید کے قواعد (Qawaid) کے ٹیسٹ ہوں گے۔
+📚 تجوید کے قواعد (Qawaid) کی جانچ کی جائے گی۔
 </li>
 
 
 <li>
-ہر ہفتے Progress Test ہوگا۔
+📝 ہر ہفتے Progress Test ہوگا۔
 </li>
 
 
 <li>
-طالب علم کی غلطیوں کی اصلاح اور مکمل رہنمائی کی جائے گی۔
+🌸 غلطیوں کی اصلاح اور مکمل رہنمائی فراہم کی جائے گی۔
 </li>
 
 
@@ -575,13 +598,15 @@ Rs. 2,600 / Month
 
 
 
-<div class="form-box">
+<!-- Registration Form -->
 
 
-<h2>
+<div class="box form-box">
+
+
+<h3>
 📝 Student Registration Form
-</h2>
-
+</h3>
 
 
 <form action="YOUR_GOOGLE_FORM_LINK" method="POST">
@@ -630,15 +655,15 @@ required>
 
 
 
-
-<input 
+<input
 type="text"
 placeholder="تعلیمی قابلیت / Qualification">
 
 
 
 
-<input 
+
+<input
 type="tel"
 placeholder="WhatsApp Number"
 required>
@@ -646,9 +671,11 @@ required>
 
 
 
-<input 
+
+<input
 type="text"
 placeholder="ملک / Country">
+
 
 
 
@@ -672,7 +699,7 @@ Nazra Quran Course
 
 
 <option>
-Makharij Correction
+Makharij Correction Course
 </option>
 
 
@@ -692,12 +719,12 @@ Salah Course
 
 
 
-
-<textarea placeholder="
+<textarea
+placeholder="
 آپ یہ کورس کیوں کرنا چاہتے ہیں؟
 Why do you want to join this course?
-"></textarea>
-
+">
+</textarea>
 
 
 
@@ -705,10 +732,9 @@ Why do you want to join this course?
 
 <button type="submit">
 
-Submit / فارم جمع کریں
+✨ Submit / فارم جمع کریں ✨
 
 </button>
-
 
 
 
@@ -729,19 +755,22 @@ Submit / فارم جمع کریں
 
 <br>
 
-Thank you for choosing Noor Online Quran Classes
+Thank you for choosing
+<br>
+
+📖 Noor Online Quran Classes
 
 </div>
 
 
 
 
-</div>
 
 </div>
 
+</div>
 
 
 </body>
 
-</html>
+</html>    
