@@ -1,103 +1,667 @@
-<section class="course-registration">
+<!DOCTYPE html>
+<html lang="ur" dir="rtl">
 
-    <h2>قرآن تجوید کورس، دعائیں اور نماز سیکھنے کے لیے داخلہ فارم</h2>
+<head>
 
-    <p>
-        السلام علیکم ورحمۃ اللہ وبرکاتہ
-    </p>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <p>
-        قرآنِ پاک کو صحیح تجوید، درست مخارج، قواعد، دعاؤں اور نماز کے مکمل طریقے کے ساتھ
-        سیکھنے کے خواہشمند طلبہ و طالبات کے لیے یہ کورس ترتیب دیا گیا ہے۔
-    </p>
-
-    <h3>کون لوگ داخلہ لے سکتے ہیں؟</h3>
-
-    <ul>
-        <li>خواتین اس کورس میں داخلہ لے سکتی ہیں۔</li>
-        <li>چھوٹی عمر کے بچے اور بچیاں بھی داخلہ لے سکتے ہیں۔</li>
-        <li>وہ افراد جو قرآنِ پاک صحیح طریقے سے پڑھنا چاہتے ہیں، اس کورس میں شامل ہو سکتے ہیں۔</li>
-    </ul>
+<title>Noor Online Quran Classes - Enrollment</title>
 
 
-    <h3>کورس میں کیا سکھایا جائے گا؟</h3>
+<style>
 
-    <ul>
-        <li>قرآنِ پاک ناظرہ درست طریقے سے پڑھنا۔</li>
-        <li>تجوید کے مکمل قواعد سیکھنا۔</li>
-        <li>حروف کے صحیح مخارج کی پہچان اور ادائیگی۔</li>
-        <li>قرآن پڑھنے کی غلطیوں کی اصلاح۔</li>
-        <li>ضروری دعائیں یاد کرنا۔</li>
-        <li>نماز کا درست طریقہ اور ضروری مسائل سیکھنا۔</li>
-    </ul>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
 
 
-    <h3>کورس کا طریقہ کار</h3>
+body{
 
-    <p>
-        اس کورس میں ہر طالب علم کی مکمل رہنمائی کی جائے گی۔
-        ہر سبق کے ساتھ طالب علم سے سبق سنا جائے گا تاکہ غلطیوں کی نشاندہی اور اصلاح کی جا سکے۔
-    </p>
+    font-family:
+    "Noto Nastaliq Urdu",
+    "Segoe UI",
+    Arial,
+    sans-serif;
 
-    <ul>
-        <li>ہر سبق کے بعد سبق سنایا جائے گا۔</li>
-        <li>مخارج (Makharij) کی باقاعدہ جانچ کی جائے گی۔</li>
-        <li>تجوید کے قواعد (Qawaid) کے ٹیسٹ لیے جائیں گے۔</li>
-        <li>ہر ہفتے باقاعدہ ٹیسٹ ہوگا۔</li>
-        <li>طالب علم کی کارکردگی کا جائزہ لیا جائے گا۔</li>
-    </ul>
+    background:
+    linear-gradient(135deg,#041421,#073044);
 
+    color:white;
 
-    <h3>داخلہ کے لیے ضروری معلومات</h3>
+    line-height:2;
 
-    <form>
-
-        <label>پورا نام:</label>
-        <input type="text" name="name">
-
-        <label>عمر:</label>
-        <input type="number" name="age">
-
-        <label>جنس:</label>
-        <select name="gender">
-            <option>خاتون</option>
-            <option>مرد</option>
-            <option>بچی</option>
-            <option>بچہ</option>
-        </select>
-
-        <label>تعلیمی قابلیت:</label>
-        <input type="text" name="qualification">
-
-        <label>آپ کس کورس میں داخلہ لینا چاہتے ہیں؟</label>
-        <select name="course">
-            <option>تجوید کورس</option>
-            <option>قرآن ناظرہ کورس</option>
-            <option>دعائیں یاد کرنے کا کورس</option>
-            <option>نماز سیکھنے کا کورس</option>
-            <option>مکمل قرآن اصلاح کورس</option>
-        </select>
-
-        <label>قرآن پڑھنے کی موجودہ سطح:</label>
-        <select name="level">
-            <option>بالکل ابتدائی</option>
-            <option>قرآن پڑھ لیتے ہیں لیکن تجوید بہتر کرنا چاہتے ہیں</option>
-            <option>تجوید کے ساتھ پڑھنا سیکھنا چاہتے ہیں</option>
-        </select>
+}
 
 
-        <label>رابطہ نمبر:</label>
-        <input type="tel" name="phone">
+/* Main Section */
+
+.container{
+
+    width:100%;
+
+    padding:50px 20px;
+
+}
 
 
-        <p>
-            فارم جمع کروانے کے بعد آپ سے رابطہ کیا جائے گا۔
-        </p>
 
-        <a href="YOUR_GOOGLE_FORM_LINK" class="button">
-            فارم پُر کریں
-        </a>
+.card{
 
-    </form>
+    max-width:950px;
 
-</section>
+    margin:auto;
+
+    background:
+    rgba(255,255,255,0.08);
+
+    backdrop-filter:blur(15px);
+
+    border-radius:30px;
+
+    padding:45px;
+
+    box-shadow:
+    0 20px 60px rgba(0,0,0,0.4);
+
+}
+
+
+
+/* Header */
+
+
+.header{
+
+    text-align:center;
+
+    margin-bottom:40px;
+
+}
+
+
+.header h1{
+
+    font-size:40px;
+
+    color:#00e5ff;
+
+}
+
+
+.header h2{
+
+    font-size:28px;
+
+    margin-top:15px;
+
+}
+
+
+.header p{
+
+    font-size:18px;
+
+}
+
+
+
+/* Boxes */
+
+
+.box{
+
+    background:
+    rgba(255,255,255,0.10);
+
+    padding:25px;
+
+    border-radius:20px;
+
+    margin-bottom:25px;
+
+}
+
+
+.box h3{
+
+    color:#00e5ff;
+
+    font-size:24px;
+
+    margin-bottom:15px;
+
+}
+
+
+.box ul{
+
+    padding-right:25px;
+
+}
+
+
+.box li{
+
+    margin-bottom:8px;
+
+}
+
+
+
+/* AI Box */
+
+.ai{
+
+    border:1px solid #9b6cff;
+
+}
+
+
+
+/* Form */
+
+
+.form-box{
+
+    margin-top:40px;
+
+}
+
+
+.form-box h2{
+
+    text-align:center;
+
+    color:#00e5ff;
+
+    margin-bottom:25px;
+
+}
+
+
+
+input,
+select,
+textarea{
+
+
+    width:100%;
+
+    padding:15px;
+
+    margin-bottom:18px;
+
+    border-radius:12px;
+
+    border:none;
+
+    font-size:16px;
+
+    direction:rtl;
+
+}
+
+
+
+textarea{
+
+    height:120px;
+
+}
+
+
+
+/* Button */
+
+
+button{
+
+
+    width:100%;
+
+    padding:16px;
+
+    border:none;
+
+    border-radius:30px;
+
+    background:#00e5ff;
+
+    color:#002333;
+
+    font-size:20px;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+
+button:hover{
+
+    background:white;
+
+    transform:scale(1.03);
+
+}
+
+
+
+/* Footer */
+
+
+.footer{
+
+    text-align:center;
+
+    margin-top:35px;
+
+    color:#ddd;
+
+}
+
+
+
+/* Mobile */
+
+
+@media(max-width:600px){
+
+.card{
+
+    padding:25px;
+
+}
+
+
+.header h1{
+
+    font-size:28px;
+
+}
+
+
+.header h2{
+
+    font-size:21px;
+
+}
+
+}
+
+
+</style>
+
+</head>
+
+
+
+<body>
+
+
+<div class="container">
+
+
+<div class="card">
+
+
+
+<div class="header">
+
+<h1>📖 Noor Online Quran Classes</h1>
+
+<h2>
+قرآن تجوید، ناظرہ، دعائیں اور نماز کورس
+</h2>
+
+<p>
+Quran Tajweed, Nazra, Duas & Salah Learning Program
+</p>
+
+</div>
+
+
+
+
+<div class="box">
+
+<h3>
+السلام علیکم ورحمۃ اللہ وبرکاتہ
+</h3>
+
+
+<p>
+قرآنِ پاک کو صحیح تجوید، درست مخارج، قواعد، دعاؤں اور نماز کے مکمل طریقے کے ساتھ سیکھنے کے لیے ہمارے کورسز میں داخلہ حاصل کریں۔
+</p>
+
+
+<p>
+Learn Quran with proper Tajweed, Makharij, Qawaid, Duas and Salah guidance.
+</p>
+
+
+</div>
+
+
+
+
+
+<div class="box">
+
+<h3>
+🌸 کون داخلہ لے سکتا ہے؟
+</h3>
+
+
+<ul>
+
+<li>خواتین (Women)</li>
+
+<li>بچے (Boys)</li>
+
+<li>بچیاں (Girls)</li>
+
+<li>ہر عمر کے افراد جو قرآن صحیح پڑھنا چاہتے ہیں</li>
+
+</ul>
+
+
+</div>
+
+
+
+
+
+<div class="box">
+
+<h3>
+📚 ہمارے کورسز
+</h3>
+
+
+<ul>
+
+<li>
+قرآن ناظرہ کورس (Quran Reading Course)
+</li>
+
+
+<li>
+مکمل تجوید کورس (Complete Tajweed)
+</li>
+
+
+<li>
+مخارج کی اصلاح (Makharij Correction)
+</li>
+
+
+<li>
+دعائیں یاد کرنا (Daily Duas)
+</li>
+
+
+<li>
+نماز کا مکمل طریقہ (Salah Learning)
+</li>
+
+
+</ul>
+
+
+</div>
+
+
+
+
+
+
+<div class="box">
+
+<h3>
+⭐ ہمارا طریقہ تعلیم
+</h3>
+
+
+<ul>
+
+
+<li>
+ہر سبق کے ساتھ سبق سنا جائے گا۔
+</li>
+
+
+<li>
+مخارج کے ٹیسٹ لیے جائیں گے۔
+</li>
+
+
+<li>
+تجوید کے قواعد کے ٹیسٹ ہوں گے۔
+</li>
+
+
+<li>
+ہر ہفتے Progress Test ہوگا۔
+</li>
+
+
+<li>
+طالب علم کی غلطیوں کی اصلاح اور مکمل رہنمائی کی جائے گی۔
+</li>
+
+
+</ul>
+
+
+</div>
+
+
+
+
+
+
+<div class="box ai">
+
+<h3>
+🤖 AI Assisted Learning
+</h3>
+
+
+<p>
+
+جدید AI technology کو learning support، practice اور assessment کے لیے استعمال کیا جائے گا۔
+
+</p>
+
+
+<p>
+
+AI tools will help students improve practice, learning and progress tracking.
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="form-box">
+
+
+<h2>
+📝 Student Registration Form
+</h2>
+
+
+
+<form action="YOUR_GOOGLE_FORM_LINK" method="POST">
+
+
+<input 
+type="text" 
+placeholder="پورا نام / Full Name"
+required>
+
+
+
+<input 
+type="number"
+placeholder="عمر / Age"
+required>
+
+
+
+
+<select required>
+
+<option>
+جنس منتخب کریں / Select Gender
+</option>
+
+<option>
+خاتون / Female
+</option>
+
+<option>
+مرد / Male
+</option>
+
+<option>
+بچی / Girl
+</option>
+
+<option>
+بچہ / Boy
+</option>
+
+</select>
+
+
+
+
+
+<input 
+type="text"
+placeholder="تعلیمی قابلیت / Qualification">
+
+
+
+
+
+<input 
+type="tel"
+placeholder="WhatsApp Number"
+required>
+
+
+
+
+
+<input 
+type="text"
+placeholder="ملک / Country">
+
+
+
+
+
+<select required>
+
+
+<option>
+کورس منتخب کریں / Select Course
+</option>
+
+
+<option>
+Tajweed Course
+</option>
+
+
+<option>
+Nazra Quran Course
+</option>
+
+
+<option>
+Makharij Correction
+</option>
+
+
+<option>
+Duas Course
+</option>
+
+
+<option>
+Salah Course
+</option>
+
+
+</select>
+
+
+
+
+
+
+<textarea 
+placeholder="آپ یہ کورس کیوں کرنا چاہتے ہیں؟ / Why do you want to join this course?">
+</textarea>
+
+
+
+
+
+<button type="submit">
+
+Submit / فارم جمع کریں
+
+</button>
+
+
+
+</form>
+
+
+
+</div>
+
+
+
+
+
+
+<div class="footer">
+
+جزاکم اللہ خیراً 🌸
+
+<br>
+
+Thank you for choosing Noor Online Quran Classes
+
+</div>
+
+
+
+</div>
+
+
+</div>
+
+
+</body>
+
+</html>
